@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  express-server:
+    container_name: "express-server"
+    build: ./code/express-server
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+  ui:
+    container_name: "ui-react"
+    build: ./code/ui
+    restart: unless-stopped
+    ports:
+      - 3000:3000
