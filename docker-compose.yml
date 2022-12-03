@@ -6,6 +6,7 @@ services:
     restart: unless-stopped
     ports:
       - 5000:5000
+      - 5909:5909
   ui:
     container_name: "ui-react"
     build: ./ui
