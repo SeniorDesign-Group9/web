@@ -1,3 +1,5 @@
 /ui
-/express
+/api
 .DS_Store
+.env.*
+postgres-data
