@@ -7,6 +7,10 @@ services:
     ports:
       - 5000:5000
       - 5909:5909
+    environment:
+      - DATASOURCE=jdbc:postgresql://db:5432/api
+    depends_on:
+      - db
   ui:
     container_name: "frontend"
     build: ./ui
